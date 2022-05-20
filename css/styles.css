@@ -8,32 +8,84 @@
     --primary-white-color:#ffffff;
     --button-bg-color:#F5F4FA;
 }
+h1,h2,h3,h4,p,ul{
+    margin: 0;
+    padding: 0;
+}
+/* img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+/* Heder */
 .page{
     background-color:var(--primary-bg-color);
     color:var(--primary-text-color);
     font-family: Roboto, sans-serif;
+}
+.conteiner{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid  tomato;
+}
+.main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+   
     
 }
 
 .list{
+    
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main-nav .list+.list{
+    margin-left: 8px;
+}
+.main-item{
+    display: flex;
+    flex-wrap: wrap;
 }
 /* site-nav */
 .link-nav{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
-
 }
+
 .link-nav:hover, .link-nav:focus {
     color:var(--accent-color);
 }
 .link-nav.current{
 color:var(--accent-color);
 }
+
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item+.item{
+    margin-left: 50px;
+    background-color: #2196F3;
+}
+
+
 .link-navf{
     font-size: 14px;
     line-height: 1.7;
@@ -42,6 +94,8 @@ color:var(--accent-color);
     text-decoration: none;
 }
 .auth-nav{
+    display: flex;
+margin-left: auto;
 color: var(--primary-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -52,7 +106,13 @@ text-decoration: none;
 .auth-nav:hover, .auth-nav:focus{
     color:var(--accent-color);
 }
+.auth-nav .item+.item{
+    margin-left: 50px;
+}
+
+
 .logo {
+   
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -74,8 +134,13 @@ text-decoration: none;
 /* Hero */
 .hero{
     background-color: #2F303A;
+    text-align: center;
 }
 .button{
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+   
 cursor: pointer;
 color: var(--title-text-color);
 background-color: var(--button-bg-color);
@@ -84,6 +149,9 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 letter-spacing: 0.03em;
+text-align: center;
+
+
 }
 .button:hover, .button:focus{
     background-color: var(--accent-color);
@@ -99,6 +167,10 @@ font-family: inherit;
     letter-spacing: 0.06em;
 }
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -109,16 +181,37 @@ font-family: inherit;
 }
 
 /* Secion */
-/* .section{
-    
-} */
+
+
+
 .section .title{
+    margin-top: 0;
+    margin-bottom: 50px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    
+}
+.novisibility{
+    visibility: hidden
+}
+.peculiarities{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 124px;
+
+
+    
+}
+.peculiarities .item+.item{
+    margin-left: 30px;
+}
+.peculiarities .item{
+    width: 270px;
 }
 .section .team{
     color: var(--title-text-color);
@@ -130,6 +223,34 @@ font-family: inherit;
 .section .work{ 
     line-height: 1.19;
     letter-spacing: 0.03em;  
+}
+ .works{
+    width: 370px;
+    display: flex;
+    margin-bottom: 158px;
+  
+}
+.works .itemwork+.itemwork{
+    margin-left: 30px;
+}
+ /* .itemcomand{
+     width: 270px;
+   
+    background-color: #e84b4b;
+} */
+ .command{
+    display: flex;
+    margin-bottom: 94px;
+    
+}
+.command .itemcomand+.itemcomand{
+    margin-left: 30px;
+}
+.itemcomand{
+    text-align: center;
+}
+.section .title{
+margin-bottom: 50px;
 }
 .section .subtitle{
 color: var(--title-text-color);
@@ -159,14 +280,27 @@ text-transform: uppercase;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+.imgcommand{
+    margin-bottom: 30px;
+}
+.team{
+    margin-bottom: 10px;
+}
+.section.work{
+    margin-bottom: 184px;
+}
 /* footer */
 .adress{
     font-style: normal;
-    background-color: #2F303A;
+   
 }
 .footer{
     font-style: normal;
     background-color: #2F303A;
+   
+}
+.lfooter{
+    margin-bottom: 20px;
 }
 .footer-par{
 font-style: normal;
