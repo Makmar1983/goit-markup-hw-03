@@ -27,23 +27,22 @@ h1,h2,h3,h4,p,ul{
 
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid  tomato;
+    /* outline: 2px solid  tomato; */
 }
+ .page-header{
+    border-bottom: 1px solid #ECECEC;
+ }
 .main-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-   
-    
+    align-items: center;   
 }
-
-.list{
-    
+ .pnav{
+    justify-content: center;
+ }
+.list{   
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
@@ -54,7 +53,23 @@ h1,h2,h3,h4,p,ul{
 .main-item{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 96px;
+    justify-content: center;
+    
+    /* background-color: tomato; */
+
 }
+.litem {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.litem:nth-child(3n){
+    margin-right: 0;
+   
+}
+
 /* site-nav */
 .link-nav{
     display: block;
@@ -82,7 +97,7 @@ color:var(--accent-color);
 }
 .site-nav .item+.item{
     margin-left: 50px;
-    background-color: #2196F3;
+   
 }
 
 
@@ -166,6 +181,12 @@ font-family: inherit;
     line-height: 1.88;
     letter-spacing: 0.06em;
 }
+.bportfolio{
+    padding: 0;
+     margin-top: 51px;
+     margin-bottom: 50px;
+    min-width: 145px;
+}
 .hero-title{
     margin-top: 0;
     margin-bottom: 30px;
@@ -182,7 +203,10 @@ font-family: inherit;
 
 /* Secion */
 
-
+/* .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+} */
 
 .section .title{
     margin-top: 0;
@@ -267,12 +291,15 @@ text-transform: uppercase;
 }
 .link-portfolio{
     text-decoration: none;
+    margin-bottom: 0px;
+    
 }
 .link-portfolio .work{
     
     color: var(--primary-text-color);
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
 }
 .link-portfolio .team{
     color: var(--title-text-color);
@@ -283,12 +310,15 @@ text-transform: uppercase;
 .imgcommand{
     margin-bottom: 30px;
 }
+.img-portfolio{
+    margin-bottom: 20px;
+}
 .team{
     margin-bottom: 10px;
 }
-.section.work{
+/* .section .work{
     margin-bottom: 184px;
-}
+} */
 /* footer */
 .adress{
     font-style: normal;
