@@ -31,6 +31,7 @@ h1,h2,h3,h4,p,ul{
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid  tomato; */
+    background-color: tomato;
 }
  .page-header{
     border-bottom: 1px solid #ECECEC;
@@ -72,9 +73,10 @@ h1,h2,h3,h4,p,ul{
 
 /* site-nav */
 .link-nav{
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -109,25 +111,45 @@ color:var(--accent-color);
     text-decoration: none;
 }
 .auth-nav{
-    display: flex;
-margin-left: auto;
-color: var(--primary-text-color);
-font-weight: 500;
-font-size: 14px;
-line-height:1.14;
-letter-spacing: 0.02em;
-text-decoration: none;
+display: flex;
+
+
+
 }
-.auth-nav:hover, .auth-nav:focus{
-    color:var(--accent-color);
-}
+
 .auth-nav .item+.item{
     margin-left: 50px;
 }
+.auth-nav.list{
+    margin-left: auto;
+}
+.linkpadding{
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height:1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.linkpadding:hover,
+.alink.linkpadding:focus {
+    color: var(--accent-color);
+}
 .logo {
    
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logof {
+    display: block;
+margin-bottom: 30px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -150,6 +172,8 @@ text-decoration: none;
 .hero{
     background-color: #2F303A;
     text-align: center;
+     padding-top: 100px;
+     padding-bottom: 200px;
 }
 .button{
     border-radius: 4px;
@@ -180,6 +204,7 @@ font-family: inherit;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    border: none;
 }
 .bportfolio{
     padding: 0;
@@ -203,14 +228,16 @@ font-family: inherit;
 
 /* Secion */
 
-/* .section{
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
-} */
+  
+}
 
-.section .title{
+.title{
     margin-top: 0;
     margin-bottom: 50px;
+  
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -220,16 +247,30 @@ font-family: inherit;
 
     
 }
-.novisibility{
-    visibility: hidden
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
 }
 .peculiarities{
     display: flex;
-    margin-top: 94px;
-    margin-bottom: 124px;
+    /* margin-top: 94px;
+    margin-bottom: 124px; */
 
 
     
+}
+.subtitle{
+    margin-bottom: 10px;
 }
 .peculiarities .item+.item{
     margin-left: 30px;
@@ -249,10 +290,10 @@ font-family: inherit;
     letter-spacing: 0.03em;  
 }
  .works{
-    width: 370px;
+    /* width: 370px; */
     display: flex;
-    margin-bottom: 158px;
-  
+    
+
 }
 .works .itemwork+.itemwork{
     margin-left: 30px;
@@ -273,9 +314,13 @@ font-family: inherit;
 .itemcomand{
     text-align: center;
 }
-.section .title{
-margin-bottom: 50px;
+.dcommand{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+/* .section .title{
+margin-bottom: 50px;
+} */
 .section .subtitle{
 color: var(--title-text-color);
 font-weight: 700;
@@ -299,7 +344,7 @@ text-transform: uppercase;
     color: var(--primary-text-color);
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
+
 }
 .link-portfolio .team{
     color: var(--title-text-color);
@@ -307,9 +352,7 @@ text-transform: uppercase;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-.imgcommand{
-    margin-bottom: 30px;
-}
+
 .img-portfolio{
     margin-bottom: 20px;
 }
@@ -327,10 +370,21 @@ text-transform: uppercase;
 .footer{
     font-style: normal;
     background-color: #2F303A;
+   padding-top:  60px;
+   padding-bottom: 60px;
+
    
 }
 .lfooter{
     margin-bottom: 20px;
+}
+.listf {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.listf:nth-child{
+    margin-bottom: 9px;
 }
 .footer-par{
 font-style: normal;
@@ -339,7 +393,7 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 }
 .mail{
-
+   
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
