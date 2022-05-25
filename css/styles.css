@@ -44,7 +44,7 @@ h1,h2,h3,h4,p,ul{
 }
  .pnav{
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
    
  }
  .portfolio-section{
@@ -133,6 +133,7 @@ display: flex;
     margin-left: auto;
 }
 .linkpadding{
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -181,7 +182,7 @@ margin-bottom: 30px;
 .hero{
     background-color: #2F303A;
     text-align: center;
-     padding-top: 100px;
+     padding-top: 200px;
      padding-bottom: 200px;
 }
 .button{
@@ -260,7 +261,9 @@ font-family: inherit;
     padding-bottom: 94px;
   
 }
-
+.section.nobottom{
+    padding-bottom: 0;
+}
 .title{
     margin-top: 0;
     margin-bottom: 50px;
@@ -417,7 +420,7 @@ border-left: 1px solid #EEEEEE;
     margin-top: 0;
     margin-bottom: 0;
 }
-.listf:nth-last-child(n){
+.listf:not(:last-child){
     margin-bottom: 9px;
 }
 .footer-par{
